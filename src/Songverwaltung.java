@@ -72,8 +72,9 @@ public class Songverwaltung {
 		}
 	}
 
-	public Song sucheUndSpieleSong(){
-		Song fSong = SongSearch.start(songs);
-		return fSong; //f stands for found
+	public void sucheUndSpieleSong(String titel){// sucht nach Titel, nicht nach Interpret
+		SongSearch suche = new SongSearch(songs);
+		Song fSong = suche.findSongByT(titel);
+		fSong.abspielen();
 	}
 }

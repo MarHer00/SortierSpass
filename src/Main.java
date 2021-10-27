@@ -3,5 +3,7 @@ public class Main {
         Songverwaltung verwaltung = new Songverwaltung(10);
         verwaltung.fillArray();
         verwaltung.gibAlleSongsAus();
+        System.out.println();
+        verwaltung.sucheUndSpieleSong("aTitel");
     }
 }

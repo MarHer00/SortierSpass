@@ -1,6 +1,6 @@
 
 public class Song {
-	String titel;
+	String titel; //songname must be all lowercased
 	String interpret;
 	int songLength;
 	
@@ -10,7 +10,7 @@ public class Song {
 	}
 	
 	public void abspielen() {
-		abspielen(0);
+		System.out.println("playing: "+titel+" by "+interpret);
 	}
 	
 	public void abspielen(int startPunkt) { 
