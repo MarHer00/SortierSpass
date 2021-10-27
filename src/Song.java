@@ -26,4 +26,8 @@ public class Song {
 	public String gibInterpret() {
 		return interpret;
 	}
+
+	public String toString(){
+		return ("Titel: "+titel+" Artist: "+interpret);
+	}
 }
