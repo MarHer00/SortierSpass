@@ -35,7 +35,7 @@ public class SongSearch {
       return new Song("", "");
     }
 
-    public boolean vorAktSong(String searchedSong, String aktSong){
+    public boolean vorAktSong(String searchedSong, String aktSong){// stands for vor aktuellem song
       return vorAktSong(searchedSong, aktSong, 0);
     }
 
@@ -43,8 +43,8 @@ public class SongSearch {
       int charSSongInAlph = getCharposInAlph(searchedSong.charAt(i));
       int charASongInAlph = getCharposInAlph(aktSong.charAt(i));
 
-      searchedSong = searchedSong.substring(i+1);
-      aktSong = aktSong.substring(i+1);
+      searchedSong = searchedSong.substring(i);
+      aktSong = aktSong.substring(i);
 
       if (charSSongInAlph<charASongInAlph) {
         return true;
@@ -54,6 +54,7 @@ public class SongSearch {
         return false;
       }
     }
+    
 
     public int getCharposInAlph(char cChar){
       String alph = "abcdefghijklmnopqrstuvwxyz";
