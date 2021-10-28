@@ -49,7 +49,7 @@ public class SongSearch {
       if (charSSongInAlph<charASongInAlph) {
         return true;
       } else if (charSSongInAlph == charASongInAlph) {
-        return vorAktSong(searchedSong, aktSong, i+1);
+        return vorAktSong(searchedSong, aktSong, i);
       } else{
         return false;
       }
