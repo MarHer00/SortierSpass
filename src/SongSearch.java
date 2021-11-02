@@ -8,7 +8,7 @@ public class SongSearch {
     }
 
     public Song findSongByT(String searchedSongT) {// T for titel
-      System.out.println("Suche "+searchedSongT+" in einem Array der L�nge "+songs.length);
+      System.out.println("Suche "+searchedSongT+" in einem Array der Laenge "+songs.length);
       int linkerRand = 0;             // inklusiv
       int rechterRand = songs.length; // exklusiv
       System.out.println("linkerRand = "+linkerRand+" // rechterRand = "+rechterRand);
